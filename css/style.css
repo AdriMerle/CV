@@ -1,0 +1,138 @@
+/* LOGO */
+
+.logo {
+    font-family: 'Helvetica', sans-serif; /* A modern, clean, sans-serif font */
+    font-size: 1em; /* A bit smaller for a more minimalistic look */
+    color: #0000ff; /* Change the text color to blue */
+    background-color: #fff; /* Add a white background */
+    padding: 5px 10px; /* Some padding to give the text some room */
+    border-radius: 5px; /* Add some border radius to make it look like a button */
+    text-decoration: none; /* Remove underline from the text */
+    transition: all 0.3s ease; /* Add a transition for the hover effect */
+    display: inline-block; /* Add this line */
+}
+
+.logo:hover {
+    color: #00c8ff; /* Change the text color to black on hover */
+    transform: rotate(-15deg); /* Rotate the logo 20 degrees on hover */
+}
+
+.company-logo {
+    max-height: 4rem; /* Set the maximum height of the logo */
+}
+
+/* NAVBAR */
+
+.nav-link {
+    font-size: 1em; /* Initial font size */
+    transition: all 0.3s ease; /* Add a transition for the hover effect */
+    margin-right: 3px; /* Add right margin to each link */
+}
+
+.nav-link:hover {
+    font-size: 1.05em; /* Increase the font size on hover */
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN */
+
+main {
+    padding-top: 1rem; /* Adjust as needed */
+}
+
+.card-container {
+    padding: 0.5rem; /* Add padding to the job container */
+    margin-bottom: 0.1rem; /* Add margin between job containers */
+    border-radius: 10px; /* Add border radius to the job container */
+    transition: box-shadow 0.2s, transform 0.2s;
+
+}
+
+.card-container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    transform: translateY(-3px); /* Lift the card slightly on hover */
+}
+
+.job-detail {
+    font-style: italic; /* Add italic style to the text */
+    color: #9a9999; /* Change the color of the text to a slightly gray shade */
+}
+
+.job-detail a {
+    color: #9a9999; /* Change the color of the links to blue */
+}
+
+/* On this page navbar */
+
+.minimalistic-nav .nav-link {
+    color: #939393; /* Change the color of the text */
+    padding: 0.5rem 0; /* Reduce the padding */
+}
+
+.minimalistic-nav .nav-link:hover {
+    color: #cbcbcb; /* Change the color on hover */
+}
+
+.column-card {
+    padding-bottom: 1rem; /* Add some margin */
+}
+
+.big-icone {
+    font-size: 2rem; /* Increase the font size */
+    margin: 0.5rem; /* Add some margin */
+}
+
+.big-icone:hover,
+.icone:hover {
+    color: #0000bb; /* Change the color on hover */
+}
+
+/* Stars */
+
+@keyframes colorize {
+    0% { color: initial; }
+    100% { color: #ffcc00; }
+}
+
+.stars span {
+    display: inline-block;
+    transition: color 0.1s;
+}
+
+.stars:hover span {
+    animation: colorize 0.5s forwards;
+}
+
+.stars:hover span:nth-child(n+2) {
+    animation-delay: 0.1s;
+}
+
+.stars:hover span:nth-child(n+3) {
+    animation-delay: 0.2s;
+}
+
+
+/* Photo */
+.photo-container {
+    overflow: hidden;
+    border-radius: 10px; /* Add border radius to the container */
+}
+
+.photo {
+    transition: transform 0.3s ease-in-out, filter 0.3s; /* Add a transition for the hover effect */
+}
+
+.photo:hover {
+    filter: brightness(110%); /* Increase the brightness of the photo */
+    transform: scale(1.1); /* Zoom in the photo */
+}
