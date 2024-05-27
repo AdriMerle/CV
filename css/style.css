@@ -1,15 +1,11 @@
 /* LOGO */
 
 .logo {
-    font-family: 'Helvetica', sans-serif; /* A modern, clean, sans-serif font */
-    font-size: 1em; /* A bit smaller for a more minimalistic look */
-    color: #0000ff; /* Change the text color to blue */
-    background-color: #fff; /* Add a white background */
     padding: 5px 10px; /* Some padding to give the text some room */
-    border-radius: 5px; /* Add some border radius to make it look like a button */
-    text-decoration: none; /* Remove underline from the text */
     transition: all 0.3s ease; /* Add a transition for the hover effect */
     display: inline-block; /* Add this line */
+    max-height: 4rem; /* Set the maximum height of the logo */
+    border-radius: 15px; /* Add border radius to round the corners */
 }
 
 .logo:hover {
