@@ -1,3 +1,7 @@
+/**
+* Called when the dark mode button is clicked. Toggles the theme between light and dark.
+* 
+*/
 function toggleDarkMode() {
     const theme = document.documentElement.getAttribute('data-bs-theme');
     if (theme === 'dark') {
