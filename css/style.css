@@ -129,6 +129,6 @@ main {
 }
 
 .photo:hover {
-    filter: brightness(110%); /* Increase the brightness of the photo */
+    filter: brightness(108%); /* Increase the brightness of the photo */
     transform: scale(1.1); /* Zoom in the photo */
 }
