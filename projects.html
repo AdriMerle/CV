@@ -8,16 +8,15 @@
     <meta charset="UTF-8">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- JS -->
-    <script src="js/darkmode.js"></script>
+    <script src="static/js/darkmode.js"></script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="static/logo_bleu.png">
+    <link rel="icon" type="image/png" href="static/img/logo_bleu.png">
 </head>
 <body>
     <!-- Header -->
@@ -26,7 +25,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <!-- <span class="logo">AM</span> -->
-                    <img src="static/logo_et_nom.png" alt="Logo" class="logo">
+                    <img src="static/img/logo_et_nom.png" alt="Logo" class="logo">
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +66,7 @@
 
                     <!-- Image -->
                     <div class="column-card photo-container">
-                        <img src="static/projets.jpg" alt="Illustration projets" class="photo img-fluid">
+                        <img src="static/img/projets.jpg" alt="Illustration projets" class="photo img-fluid">
                         <p style="font-size: smaller; font-style: italic;">Dessiné par Freepik</p>
                     </div>
 
@@ -75,7 +74,9 @@
                         <h4>Sur cette page</h3>
                         <hr>
                         <nav class="nav flex-column" aria-label="On this page">
-                            <a class="nav-link" href="#Projets personnels et scolaires">Projets</a>
+                            <a class="nav-link" href="#Applications web">Applications web</a>
+                            <a class="nav-link" href="#Développement logiciel">Développement logiciel</a>
+                            <a class="nav-link" href="#Jeux et autres">Jeux et autres</a>
                             <a class="nav-link" href="#Contact">Contact</a>
                         </nav>
                     </div>
@@ -87,29 +88,132 @@
                     <!------ Présentation ------>
                     <div class="content">
                         <h1>Projets personnels et scolaires</h1>
-                        <hr>
+                        <p>Sur cette page, vous trouverez une liste de mes projets personnels et scolaires. Certains sont aboutis, d'autres sont des prototypes, et d'autres encore sont toujours inachevés.</p>
                     </div>
 
-                    <!------ Projets ------>
+                    <!------ Applications web ------>
                     <div class="content">
+                        <h2 id="Applications web">Applications web</h2>
+                        <hr>
                         <div class="card-container">
                             <div class="row">
                                 <div class="col-md-9">
                                     <h4>Moteur de recherche du patrimoine UNESCO</h4>
-                                    <p class="job-detail"><a href="https://hunkanome.github.io/WS-WonderWhizbang/">Accéder à WonderWhizbang</a>
-                                    <br>
-                                    <a href="https://github.com/hunkanome/WS-WonderWhizbang">Repository Github de WonderWhizbang</a></p>
+                                    <p class="job-detail"><a href="https://hunkanome.github.io/WS-WonderWhizbang/" target="_blank">Démo</a> <i class="fas fa-play-circle"></i>
+                                    &emsp;
+                                    <a href="https://github.com/hunkanome/WS-WonderWhizbang" target="_blank">Code</a> <i class="fas fa-code"></i></p>
                                 </div>
                             </div>
                             <ul>
                                 <li>Un moteur de recherche spécialisé dans le patrimoine mondial de l'UNESCO</li>
                                 <li>Utilisant la base de données sémantique DBpedia</li>
+                                <li>Avec des fonctionnalités poussées, comme la recherche par lieu, sur une carte ou un jeu d'énigmes</li>
                                 <li>Projet réalisé en équipe de 6, dans le cadre du cours de Web Sémantique</li>
                             </ul>
                         </div>
+
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Site internet de présentation</h4>
+                                    <p class="job-detail"><a href="https://github.com/adrimerle/CV" target="_blank">Code</a> <i class="fas fa-code"></i></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <p style="font-style: italic;">Site internet en construction... Les autres projets seront ajoutés plus tard :)</p>                
+                    <!------ Développement logiciel ------>
+                    <div class="content">
+                        <h2 id="Développement logiciel">Développement logiciel</h2>
+                        <hr>
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Analyste de budget</h4>
+                                    <p class="job-detail"><a href="https://github.com/adrimerle/BudgetAnalyst" target="_blank">Code</a> <i class="fas fa-code"></i></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Application en Python, développée dans le cadre d'un projet personnel pour apprendre Django</li>
+                                <li>Graphiques des dépenses et recettes, triés par catégorie</li>
+                                <li>Graphiques d'évolution du solde</li>
+                                <li>Gestion de catégories avec des couleurs</li>
+                                <li>Tableaux modifiables pour gérer les transactions et les catégories</li>
+                                <li>Import des données bancaires simplifié et automatisé</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Calcul et optimisation des tournées de plusieurs livreurs</h4>
+                                    <p class="job-detail">
+                                        <a href="https://github.com/hunkanome/AGILE-KroustyTour" target="_blank">Code</a> <i class="fas fa-code"></i>
+                                        &emsp;
+                                        <a href="https://hunkanome.github.io/AGILE-KroustyTour/javadoc/" target="_blank">Documentation Javadoc</a> <i class="fas fa-book"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Application développée dans le cadre d'un projet scolaire pour apprendre à travailler en groupe Agile et à programmer en utilisant des design patterns</li>
+                                <li>Basé aussi sur un cours d'algorithmique et de parcours de graphe</li>
+                                <li>Algorithme de plus court chemin optimisé avec heuristique</li>
+                                <li>Tests unitaires avec haut taux de couverture</li>
+                            </ul>
+                            <img src="static/img/krousty_tour.png" alt="Capture d'écran de KroustyTour" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!------ Jeux et autres ------>
+                    <div class="content">
+                        <h2 id="Jeux et autres">Jeux et autres</h2>
+                        <hr>
+
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Puissance 4 avec IA</h4>
+                                    <p class="job-detail"><a href="https://github.com/hunkanome/ALIA-Project" target="_blank">Code</a> <i class="fas fa-code"></i></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Un jeu de Puissance 4 en Prolog</li>
+                                <li>Intelligence artificielle basée sur un algorithme Minimax avec heuristique</li>
+                                <li>Possibilité de définir la profondeur de recherche de l'IA et donc son efficacité</li>
+                                <li>Projet réalisé en équipe de 6, dans le cadre du cours d'Approche Logique pour l'Intelligence Artificielle</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Awale Server-Client</h4>
+                                    <p class="job-detail"><a href="https://github.com/adrimerle/PR-Awale" target="_blank">Code</a> <i class="fas fa-code"></i></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Un jeu d'Awalé en C, avec un serveur et plusieurs clients qui se connectent via le serveur pour jouer</li>
+                                <li>Interface graphique en mode texte sur un terminal</li>
+                                <li>Fonctionnalités supplémentaires comme la sauvegarde de la partie, le chargement d'une partie sauvegardée, une messagerie et la possibilité de rejouer</li>
+                                <li>Projet réalisé en duo, dans le cadre du cours de Programmation Réseau</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-container">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h4>Sudoku</h4>
+                                    <p class="job-detail"><a href="https://github.com/adrimerle/Sudoku" target="_blank">Code</a> <i class="fas fa-code"></i></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Un jeu de Sudoku en Java, avec une interface graphique JavaFX</li>
+                                <li>Différents niveaux de difficulté</li>
+                                <li>Générateur aléatoire de grille</li>
+                                <li>Projet réalisé en solo dans le but d'appliquer des connaissances en Orienté Objet et en Design Patterns</li>
+                            </ul>
+                        </div>
+                    </div>
 
                     <!------ Contact ------>
                     <div class="content">
